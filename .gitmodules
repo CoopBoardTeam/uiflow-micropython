@@ -16,3 +16,9 @@
 [submodule "m5stack/components/lv_bindings"]
 	path = m5stack/components/lv_bindings
 	url = https://github.com/lvgl/lv_binding_micropython.git
+[submodule "m5stack/components/i2c_pca9555"]
+	path = m5stack/components/i2c_pca9555
+	url = https://github.com/CoopBoardTeam/esp32-component-i2c-pca9555.git
+[submodule "m5stack/components/bus_i2c"]
+	path = m5stack/components/bus_i2c
+	url = https://github.com/CoopBoardTeam/esp32-component-bus-i2c.git
