@@ -75,6 +75,13 @@ class Framework:
         self._kb_status = False
 
         last_touch_time = time.ticks_ms()
+        
+        # todo: remove from here to find bug that can not start before.
+        from M5 import Widgets
+        Widgets.setBrightness(0)
+        from coopboardpy.run import Runner
+        Runner().main_loop()
+
         while True:
             M5.update()
             if M5.Touch.getCount() > 0:

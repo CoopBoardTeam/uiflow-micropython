@@ -24,7 +24,9 @@ class Esp32HWDriver(CoopBoardDriver):
     def scan_key(self) -> 'List[int]':
         ret = []
         for rc in coopboard.board_scan():
-            ret.append(self.kc_map[tuple(rc)])
+            key = tuple(rc)
+            if key in self.kc_map:
+                ret.append(self.kc_map[key])
         return ret
 
     def send_keycode(self, codes: 'List[SendCode]') -> None:

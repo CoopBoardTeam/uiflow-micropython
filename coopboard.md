@@ -32,7 +32,7 @@ make BOARD=M5STACK_CoreS3 BOARD_TYPE=cores3 PORT=/dev/ttyACM0 flash_all
 ```
 
 
-### 设置启动键盘为default启动选项
+### 设置启动键盘为default启动选项(目前已经默认为这样)
 
 ```shell
 # 烧写后
@@ -40,7 +40,7 @@ make BOARD=M5STACK_CoreS3 BOARD_TYPE=cores3 PORT=/dev/ttyACM0 flash_all
 # 使用minicorn等串口工具连接到python shell
 minicom -D /dev/ttyACM0
 
-# 进入后会卡在主线程中。按Ctrl-c，停止python正在执行的内容，返回shell，会显示>>>。
+# 进入后会卡在主线程中。按Ctrl-c两次，停止python正在执行的内容，返回shell，会显示>>>。
 
 # 输入如下python指令，将之后的启动设置为从main.py启动，这样就会直接启动coopboard的主循环。
 import esp32
@@ -53,6 +53,14 @@ nvs.set_u8("boot_option", 0)
 
 开发查看
 ======
+
+### 手动执行mpy中的代码
+
+```python
+from coopboardpy.run import Runner
+Runner().main_loop()
+```
+
 
 ### 如何设置hid cdc符合设备
 - 明确调用关系
