@@ -1,0 +1,103 @@
+body {
+  background: #333333;
+}
+
+h3, h2 {
+  color: #ccc;
+}
+
+.keyboard {
+  position: relative; /* 相对定位，这样子元素可以相对于它进行绝对定位 */
+  border: 0px solid #000; /* 可选的边框，以便更容易看到键盘的边界 */
+  display: flex; /* 可选，以便键水平排列 */
+  height: 500px;
+  justify-content: space-between; /* 可选，使键之间有间距 */
+}
+
+.key {
+  position: absolute; /* 绝对定位，这样键可以相对于父div（键盘）定位 */
+  display: flex; /* 可选，以便在键中垂直居中内容 */
+  justify-content: center; /* 可选，与上面的display: flex一起使用，使内容水平居中 */
+  align-items: center; /* 可选，与上面的display: flex一起使用，使内容垂直居中 */
+  background-color: #f4f4f4;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  text-shadow: 2px 2px 4px white;
+  font-family: 'Heiti SC', '黑体', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box; /* 确保padding不会影响元素的宽度 */
+}
+
+.key:hover {
+    border: 3px solid #eee;
+}
+
+.key:active {
+    border: 3px solid #ccc;
+}
+
+.keycode-container {
+    background-color: #666;
+    color: #eee;
+    border-radius: 10px;
+    padding: 10px;
+    /* width: 300px; */
+    font-weight: bold;
+    height: 111px;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.keycode {
+    color: aquamarine;
+}
+
+.composite-keycode {
+    color: #df4c87;
+}
+
+.keyboard-config {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* 开关按钮 */
+.btn-on{
+    width: 60px;
+    height: 25px;
+    margin: 0 3px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid white;
+    background-color: #12B090;
+    display: inline-block;
+}
+
+.btn-on-title{
+   color: #ccc;
+}
+
+.btn-on-circle{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    transition: all .5s;
+}
+.btn-on-text{
+    position: absolute;
+    right: 10px;
+    line-height: 25px;
+    color: white;
+    transition: all .5s;
+}

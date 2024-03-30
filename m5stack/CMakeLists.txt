@@ -54,6 +54,9 @@ endforeach()
 configure_file(${CMAKE_BINARY_DIR}/sdkconfig.combined.in ${CMAKE_BINARY_DIR}/sdkconfig.combined COPYONLY)
 set(SDKCONFIG_DEFAULTS ${CMAKE_BINARY_DIR}/sdkconfig.combined)
 
+# Include main IDF cmake file.
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+
 if(BUILD_WITH_LVGL)
     # Include LVGL component, ignore KCONFIG
     idf_build_set_property(LV_MICROPYTHON 1)
@@ -64,11 +67,8 @@ if(BUILD_WITH_LVGL)
     idf_build_set_property(COMPILE_DEFINITIONS "${LV_CFLAGS}" APPEND)
 endif()
 
-# Include main IDF cmake file.
-include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-
 # Set the location of the main component for the project (one per target).
-list(APPEND EXTRA_COMPONENT_DIRS main_${IDF_TARGET})
+list(APPEND EXTRA_COMPONENT_DIRS ${CMAKE_SOURCE_DIR}/main_${IDF_TARGET})
 
 # Define the project.
 project(micropython)

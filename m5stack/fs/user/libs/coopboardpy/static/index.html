@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易键盘</title>
+    <script type="text/javascript" src="//cdn.socket.io/4.4.1/socket.io.js"></script>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <h3>键码事件</h3>
+    <div id="keycode-container" class="keycode-container"></div>
+    <h3>键盘</h3>
+    <div id="keyboard-config" class="keyboard-config">
+        <span class="btn-on-title">锁定</span>
+        <p class="btn-on" onclick="on_off()">
+            <!-- 圆点 --><span class="btn-on-circle"></span><!-- 文字 --><span class="btn-on-text">ON</span>
+        </p>
+    </div>
+    <div id="keyboard-container" class="keyboard"></div>
+    <h3>日志</h3>
+    <div id="log-container" class="keyboard"></div>
+    <script type="text/javascript" src="/static/index.js"></script>
+</body>
+</html>

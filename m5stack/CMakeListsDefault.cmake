@@ -169,6 +169,8 @@ set(IDF_COMPONENTS
     M5Unified
     esp32-camera
     uiflow_utility
+    bus_i2c
+    i2c_pca9555
 )
 
 if(IDF_VERSION_MINOR GREATER_EQUAL 1 OR IDF_VERSION_MAJOR GREATER_EQUAL 5)

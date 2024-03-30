@@ -247,7 +247,7 @@ patch:
 	cd ./components/lv_bindings && \
 	git apply ./../../patches/0002_avoid_lv_bindings_compile_error.patch && cd -
 	cd ./../micropython && \
-	git apply ./../m5stack/patches/0003-modtime-Add-timezone.patch && cd -
+	git apply ./../m5stack/patches/8000-modtime-timezone-Coopboard-mpy-usb-support.patch && cd -
 	cd ./components/M5Unified/M5Unified && \
 	git apply ./../../../patches/2003-Support-LTR553.patch && cd -
 
@@ -256,6 +256,6 @@ unpatch:
 	cd ./components/M5Unified/M5Unified && \
 	git apply -R ./../../../patches/2003-Support-LTR553.patch && cd -
 	cd ./../micropython && \
-	git apply -R ./../m5stack/patches/0003-modtime-Add-timezone.patch && cd -
+	git apply -R ./../m5stack/patches/8000-modtime-timezone-Coopboard-mpy-usb-support.patch && cd -
 	cd ./components/lv_bindings && \
 	git apply -R ./../../patches/0002_avoid_lv_bindings_compile_error.patch && cd -

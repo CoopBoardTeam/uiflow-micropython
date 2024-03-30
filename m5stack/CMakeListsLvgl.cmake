@@ -62,7 +62,7 @@ set(MICROPY_SOURCE_PORT
     ${PROJECT_DIR}/../micropython/ports/esp32/machine_pin.c
     ${PROJECT_DIR}/../micropython/ports/esp32/machine_touchpad.c
     ${PROJECT_DIR}/../micropython/ports/esp32/machine_adc.c
-    ${PROJECT_DIR}/../micropython/ports/esp32/machine_adcblock.c
+    ${PROJECT_DIR}/../micropython/ports/esp32/machine_adc_block.c
     ${PROJECT_DIR}/../micropython/ports/esp32/machine_dac.c
     ${PROJECT_DIR}/../micropython/ports/esp32/machine_i2c.c
     ${PROJECT_DIR}/../micropython/ports/esp32/machine_i2s.c
