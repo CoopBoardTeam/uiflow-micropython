@@ -10,7 +10,7 @@
     "0": [
       ["ESC", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LEFT_BIG_BRACKET", "RIGHT_BIG_BRACKET", "DEL"],
       ["TAB", "A", "S", "D", "F", "G", "H", "J", "K", "L", "SEMICOLON", "QUOTES", "ENTER"],
-      ["Fn1", "SHIFT_L", "Z", "X", "C", "V", "B", "N", "M", "SMALLER", "GREATER", "SLASH", "UP_ARROW", "Fn2"],
+      ["Fn1", "SHIFT_L", "Z", "X", "C", "V", "B", "N", "M", "COMMA", "END_MARK", "SLASH", "UP_ARROW", "Fn2"],
       ["CTRL_L", "WIN_L", "ALT_L", "Fn3", "Fn4", "SPACE", "", "SPACE", "ALT_R", "CTRL_R", "LEFT_ARROW", "DOWN_ARROW", "RIGHT_ARROW"]
     ],
     "1": [

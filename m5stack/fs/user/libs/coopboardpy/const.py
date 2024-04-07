@@ -56,9 +56,9 @@ class K:
     SEMICOLON = 51  # ; :
     BACK_QUOTES = 53  # ·~
     QUOTES = 52  # " '
-    COMMA = 54
-    END_MARK = 55
-    SLASH = 56
+    COMMA = 54  # ,<
+    END_MARK = 55  # .>
+    SLASH = 56   # /?
     CAPSLOCK = 57
     F1 = 58
     F2 = 59

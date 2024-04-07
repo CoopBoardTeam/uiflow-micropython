@@ -24,7 +24,7 @@ class Runner:
                     keycodes4send = decoder.decode(pressed_key_ids)
                     driver.send_keycode(keycodes4send)
                     pressed_key_ids_cache = pressed_key_ids[:]
-                driver.wait_us(30_000)
+                driver.wait_us(50)
         except KeyboardInterrupt as e:
             driver.close(cfg)
 
