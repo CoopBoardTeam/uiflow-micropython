@@ -35,7 +35,7 @@ class Code:
                 raise ValueError(f'unknown simple str key code "{d}"')
         if isinstance(d, int):   # 如果是字符串，默认为普通键码
             return cls._named_classes['KeyCode'](d)
-        t = d.pop('type')
+        t = d.pop('type', 'KeyCode')
         return cls._named_classes[t](**d)
 
     def to_dict(self):
@@ -45,8 +45,8 @@ class Code:
 @Code.register
 class KeyCode(Code):
     def __init__(self, k=0, ck=0):
-        self.k = k
-        self.ck = ck
+        self.k = k if isinstance(k, int) else K.get_code(k)
+        self.ck = ck if isinstance(ck, int) else CK.get_code(ck)
 
     def to_dict(self):
         if self.k and not self.ck:

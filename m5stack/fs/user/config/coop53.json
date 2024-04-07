@@ -8,20 +8,28 @@
   ],
   "code": {
     "0": [
-      ["ESC", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LEFT_BIG_BRACKET", "RIGHT_BIG_BRACKET", "DEL"],
-      ["TAB", "A", "S", "D", "F", "G", "H", "J", "K", "L", "SEMICOLON", "QUOTES", "ENTER"],
+      ["ESC", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LEFT_BRACKET", "RIGHT_BRACKET", "DEL"],
+      ["TAB", "A", "S", "D", "F", "G", "H", "J", "K", "L", "SEMICOLON", "QUOTES", "RETURN"],
       ["Fn1", "SHIFT_L", "Z", "X", "C", "V", "B", "N", "M", "COMMA", "END_MARK", "SLASH", "UP_ARROW", "Fn2"],
       ["CTRL_L", "WIN_L", "ALT_L", "Fn3", "Fn4", "SPACE", "", "SPACE", "ALT_R", "CTRL_R", "LEFT_ARROW", "DOWN_ARROW", "RIGHT_ARROW"]
     ],
     "1": [
-      ["", "", "", "", "", "", "", "NUM_7_and_Home", "NUM_8_and_Up_Arrow", "NUM_9_and_PageUp", "", "", "", ""],
-      ["", "", "", "", "", "", "", "NUM_4_and_Left_Arrow", "NUM_5", "NUM_6_and_Right_Arrow", "", "", ""],
-      ["", "", "", "", "", "", "", "NUM_1_and_End", "NUM_2_and_Down_Arrow", "NUM_3_and_PageDn", "", "", "", ""],
-      ["", "", "", "", "", "", "", "NUM_0_and_Insert", "Dot_and_Delete", "", "", "", ""]
+      ["", "", "", "", "", "", "", "NUM_7_and_Home", "NUM_8_and_Up_Arrow", "NUM_9_and_PageUp", "Multiply", "Divide", "", ""],
+      ["", "", "", "", "", "", "", "NUM_4_and_Left_Arrow", "NUM_5", "NUM_6_and_Right_Arrow", "Minus", "", ""],
+      ["", "", "", "", "", "", "", "NUM_1_and_End", "NUM_2_and_Down_Arrow", "NUM_3_and_PageDn", "Plus", "", "", ""],
+      ["", "", "", "", "", "", "", "NUM_0_and_Insert", "", "", "Dot_and_Delete", "ENTER", ""]
     ],
     "2": [
       ["", "", "", "", "", "", "", "", "", "", "", {"type": "EventCode", "name": "prev_light"}, {"type": "EventCode", "name": "next_light"}, ""],
       ["", "", "", "", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", "", "", "", ""]
+    ],
+    "4": [
+      [{"k": "BACK_QUOTES", "ck": "SHIFT_L"}, {"k": "1", "ck": "SHIFT_L"}, {"k": "2", "ck": "SHIFT_L"}, {"k": "3", "ck": "SHIFT_L"}, 
+       {"k": "4", "ck": "SHIFT_L"}, {"k": "5", "ck": "SHIFT_L"}, {"k": "6", "ck": "SHIFT_L"}, {"k": "7", "ck": "SHIFT_L"}, 
+       {"k": "8", "ck": "SHIFT_L"}, {"k": "9", "ck": "SHIFT_L"}, {"k": "0", "ck": "SHIFT_L"}, {"k": "MINUS", "ck": "SHIFT_L"}, {"k": "EQUAL", "ck": "SHIFT_L"}],
+      ["BACK_QUOTES", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "MINUS", "EQUAL"],
       ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
       ["", "", "", "", "", "", "", "", "", "", "", "", ""]
     ]
